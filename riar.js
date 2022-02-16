@@ -31,7 +31,7 @@ document.getElementById("save").onclick = async () => {
     )
   ).json();
 
-  const sha = atob(contentObj.sha);
+  const sha = contentObj.sha;
 
   const contentStr = atob(contentObj.content);
   const parser = new DOMParser();
