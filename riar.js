@@ -7,7 +7,7 @@ window.addEventListener("keydown", (e) => {
         const parser = new DOMParser();
         const dom = parser.parseFromString(html, "text/html");
         dom.body.innerHTML = document.getElementById("edit-area").outerHTML;
-        dom.innerHTML;
+        return dom.innerHTML;
       })
       .then((html) => {
         console.log(html);
